@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cor21164dt74c"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_tmpfn"]
+[ext_resource type="FontFile" uid="uid://c0xfo258slvos" path="res://RobotoMono-ExtraLight.ttf" id="2_ga8d8"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_tmpfn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 913.0
+offset_bottom = 330.0
+theme_override_fonts/normal_font = ExtResource("2_ga8d8")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "PLACEHOLDER"
